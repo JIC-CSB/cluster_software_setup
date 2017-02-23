@@ -63,7 +63,7 @@ def create_modulefile(program_parameters):
     mkdir_parents(modulefile_dir)
     modulefile_file = os.path.join(
         modulefile_dir,
-        program_parameters['program_version'])
+        program_parameters['program_version']) + '.lua'
     with open(modulefile_file, 'w') as fh:
         fh.write(modulefile_contents)
 
