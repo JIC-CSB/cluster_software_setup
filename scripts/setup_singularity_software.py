@@ -77,7 +77,8 @@ def move_singularity_image(program_parameters):
         program_parameters['program_path'],
         program_parameters['program_name'])
 
-    print("os.rename({}, {})".format(from_path, to_path))
+    # print("os.rename({}, {})".format(from_path, to_path))
+    os.rename(from_path, to_path)
 
 
 def main():
